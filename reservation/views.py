@@ -4,7 +4,7 @@ from experience.models import Experience
 from django.http import JsonResponse
 from .models import Reservation
 from guest.models import Guest
-# from experience.models import Experience
+
 from .forms import GuestForm, ExperienceForm, ReservationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -147,9 +147,12 @@ def change_reservation(request, reservation_id):
 
 @login_required
 def past_reservations(request):
-    guest = Guest.objects.get(user=request.user)
-    reservations = Reservation.objects.filter(guest=guest)\
-        .order_by('-reservation_date')
+    try:
+        guest = Guest.objects.get(user=request.user)
+        reservations = Reservation.objects.filter(guest=guest)\
+            .order_by('-reservation_date')
+    except Guest.DoesNotExist:
+        reservations = Reservation.objects.none()
     return render(request, 'reservation/past_reservations.html',
                   {'reservations': reservations})
 
