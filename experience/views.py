@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.views import generic
 from .models import Experience
 
-# Create your views here.
-
 
 class ExperienceList(generic.ListView):
     model = Experience

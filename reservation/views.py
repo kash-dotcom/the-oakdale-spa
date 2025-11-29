@@ -9,8 +9,6 @@ from .forms import GuestForm, ExperienceForm, ReservationForm
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
-# Create your views here.
-
 
 class ReservationListView(generic.ListView):
     model = Reservation

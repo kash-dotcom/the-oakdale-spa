@@ -2,8 +2,6 @@ from django.db import models
 from guest.models import Guest
 from experience.models import Experience
 
-# Create your models here.
-
 
 class Reservation(models.Model):
     reservation_id = models.AutoField(primary_key=True)

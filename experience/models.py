@@ -1,8 +1,6 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
 
-# Create your models here.
-
 
 class Experience(models.Model):
     experience_id = models.AutoField(primary_key=True)
