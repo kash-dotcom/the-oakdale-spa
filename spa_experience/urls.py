@@ -25,5 +25,4 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('reservation/', include('reservation.urls')),
     path('', include('experience.urls')),
-    # path('guest/', include('guest.urls')),
 ]

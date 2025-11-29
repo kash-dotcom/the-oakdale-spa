@@ -227,7 +227,7 @@ Page | Language Test Type| Status | User Action | Expected Results | Outcome
 ||Python|All|Click the **email address**|		Opens the application to send an email|	Pass
 ||Python|All|Click **WhatsApp** logo|	Opens WhatsApp|	Pass
 ||Python|All|Click **Address**	|	Opens Google maps to Ashleworth	|Pass
-||Python|All|Click **Instagram’s** logo|	Opens Instagram	|PassPass
+||Python|All|Click **Instagram’s** logo|	Opens Instagram	|Pass
 ||Python|All|Click **YouTube’s** logo	|Opens YouTube	Opens YouTube	|Pass
 ||Python|All|Click **Facebook’s** logo|	Opens Facebook|	Pass
 ||Python|All|Click **X(formerly Twitter)** logo| 	Opens X formerly Twitter|	Pass

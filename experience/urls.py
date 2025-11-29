@@ -1,7 +1,7 @@
 from django.urls import path
 from .views import ExperienceList
 
-# Create your views here.
+# Experience view URLs
 
 urlpatterns = [
     path('', ExperienceList.as_view(), name='experience_list'),
