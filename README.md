@@ -95,7 +95,7 @@ Using the principles of mobile-first, all designs were initially create for mobi
 This project utilised agile project management techniques, with Monday.com serving as the primary project management tool.
 ![alt text](https://res.cloudinary.com/dybts6jei/image/upload/v1742209022/Register_models_to_admin_site_-_Admin_Site_gi5wf3.png)
 
-**Monday.com Setup:**
+### Monday.com Setup
 
 * The project was organised into epics based on user profiles.
 * Each task included status, priority, and type attributes.
@@ -103,6 +103,20 @@ This project utilised agile project management techniques, with Monday.com servi
 * A Kanban board was used to visualise and manage the workflow, connecting issues to individual tasks.
 
 ![alt text](https://res.cloudinary.com/dybts6jei/image/upload/v1742209172/valued-guest-epic_tytrfg.png)
+
+### Project Management and Agile Mapping
+The project utilised an Agile methodology, with planning and task management originally tracked on a monday.com board. Due to the requirement for a paid subscription to view the board, and to ensure full visibility of the planning process, the following table formally documents the mapping of User Stories to Epics, demonstrating the structure and progression of the project's development.
+
+| Task Name | Description | User Story |Map to CRUD |Priority | Type | Estimated SP | Task ID | Epic | Commit |
+|-----------|-------------|------------|------------|---------|------|--------------|---------|-------|--------|
+| Design Database | Use Draw SQL to design the database structure | N/A (Architecture) | N/A (Architecture) | Critical | Feature | 3SP | 1858409769 | Experience Coordinator (Admin) | `578127c` <br> Fix reservation issue preventing new experience creation 1858409769 1858416950 |
+| Register models to admin site | Admin Site - Create Superuser <br> Use the Django alongside Summernote to create an admin site <br> Register models to admin site | Experience Coordinator - Database Management | Create, Read, Update, Delete | Critical | Feature |3SP | 1858416950 | Experience Coordinator (Admin)  | `578127c` <br> Fix reservation issue preventing new experience creation <br> `19a2ab4` <br> Register models to admin site <br> b51a8b1 Admin Site |
+| Design - Sign in feature | Use Figma to create an intuitive design | Valued Guest Status - Login | Create| High | Design | 1SP | 1858403129 | Sign in Feature | `3965273` <br> Add wireframe |
+| Login Confirmation | A message indicates that the user has been logged in | Valued Guest Status - Login | Read | Critical | Feature | 1SP | 1858405479 | Sign in Feature | `5f199bc` <br> New Feature – Create confirmation template |
+| Experience card |  Add experience card to home page | Book my Experience | Create|  High | Feature | 2SP | 1858480634 | Book an experience | `a394eec` <br> Add experience card to home page and integrate Cloudinary for image hosting |
+| Order Summary | Use a grid system to create a horizontal list of each order. | Book my Experience | Read | High | Feature | 1SP | 1858481888 | Review Experience | `f63b075` <br > Add feature – order summary using cards |
+| Change experience | User can change their experience | Change my experience | Update | Critical | Feature | 3SP | 1858483155 | Change an experience | `d0479ae` <br> Add feature to change reservation |
+|Confirmation Prompt | A modal will ask the user to confirm their cancellation | Cancel my experience | Delete | Critical |  Feature | 2SP | 1858483608 | Cancel an experience | `95b77e0` <br>  Add feature to allow users to cancel reservation <br>- Include confirmation modal to prevent accidental deletion |
 
 **Sprint Planning:**
 
@@ -251,7 +265,7 @@ Page | Language Test Type| Status | User Action | Expected Results | Outcome
 ||Python|All |Click **Reservations**|User is sent to past_reservations.html|	Pass
 ||JavaScript | All | Click *burger* icon| Modal opens with **logout** and **reservations**|	Pass
 
-## Validation 
+### Validation 
 * [JSHint](https://www.jslint.com/) was used to vailidate JavaScript - This passed with no errors
 * [CSS Validation Service ](https://jigsaw.w3.org/css-validator/) - Passed with no errors or warnings
 * [Markup Validation Service](https://validator.w3.org/) - When viewing the rendered HTML in the browser (with Python code removed) - all pages pass validation
@@ -436,6 +450,8 @@ Oakdale Spa utilises Cloudinary for image and video management.
 
 **User Stories** - [Parabol](https://www.parabol.co/blog/user-story-examples/#user-story-examples-for-online-shopping)
 
+**Markdown Table Generator** [Table to Markdown](https://tabletomarkdown.com/convert-spreadsheet-to-markdown/)
+
 ## Media
 
  [Photo by Ron Lach](https://www.pexels.com/photo/man-and-woman-in-hot-tub-8845113/)
@@ -460,4 +476,4 @@ Oakdale Spa utilises Cloudinary for image and video management.
 The content was created by the developerwith help from Gemini and Copilot. The text was inspired by various spa websites and tailored to the Oakdale Spa brand.
 
 ## Acknowledgement
-Thank you to those I spoke at [Turkish Baths 1877](https://turkishbaths1877.com/) and the **outstanding** team a Code InsCode Institute. 
+Thank you to those I spoke at [Turkish Baths 1877](https://turkishbaths1877.com/) and the **outstanding** team a Code Institute. 
