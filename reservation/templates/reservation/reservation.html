@@ -44,9 +44,9 @@
     <div class="row col l8">
         <form id="reservation_form" method="POST" action="{% url 'add_reservation' %}">
             {% csrf_token %}
-            {{ guest_form }}
-            {{ experience_form }}
-            {{ reservation_form }} {{ reservation.reservation_date|date:"d F Y" }}
+            {{ guest_form.as_p }}
+            {{ experience_form.as_p  }}
+            {{ reservation_form.as_p  }} {{ reservation.reservation_date|date:"d F Y" }}
             <button class="btn waves-effect waves-light teal darken-4" type="submit" name="action">Save</button>
         </form>
     </div>

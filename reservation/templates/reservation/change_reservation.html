@@ -10,9 +10,9 @@
     <div class="row">
      <form class="col s12" id="reservation_form" method="POST" action="{% url 'change_reservation' reservation_id=reservation_id %}">
        {% csrf_token %}
-       {{ guest_form }}
-       {{ experience_form }}
-       {{ reservation_form }}
+       {{ guest_form.as_p  }}
+       {{ experience_form.as_p }}
+       {{ reservation_form.as_p }}
        <button type="submit" class="waves-effect waves-light btn teal darken-4">Save</button>
      </form>
    </div>
