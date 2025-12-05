@@ -92,7 +92,7 @@ Using the principles of mobile-first, all designs were initially create for mobi
 
 # Agile Project Management
 
-This project utilised agile project management techniques, with Monday.com serving as the primary project management tool.
+This project utilised agile project management techniques, with [monday.com](https://monday.com/) serving as the primary project management tool.
 ![alt text](https://res.cloudinary.com/dybts6jei/image/upload/v1742209022/Register_models_to_admin_site_-_Admin_Site_gi5wf3.png)
 
 ### Monday.com Setup
@@ -237,11 +237,11 @@ The project utilised an Agile methodology, with planning and task management ori
 * **Python:** The Django framework.
 
 ## Frameworks, Libraries, and Tools
-
+* **[Monday.com](https://monday.com/)** - Used as an Agile Project Management tool which was integrated into GitHub.
 * **[Materialize](https://materializecss.com/)** - Used for its responsive grids and styling components to build a mobile-first and elegant user interface.
 * **[Django](https://www.djangoproject.com/)** - Used as the primary Python web framework for building the website's structure, backend logic, and models.
 * **[Draw SQL](https://drawsql.app/teams/de-pointe/diagrams/spa)** - Used to design and visualise the relational database structure, creating the Entity Relationship Diagram (ERD) for the project.
-* **[Canva](https://www.canva.com/):** - Used as a design tool to create visuals for the color palette.
+* **[Canva](https://www.canva.com/)** - Used as a design tool to create visuals for the color palette.
 * **[Gemini](https://gemini.google.com/)** - Used for the creation of the README and support problem solving
 * **[VS Code](https://code.visualstudio.com/)** -Served as the primary code editor and integrated development environment for writing and managing the project's code.
 * **[GitHub](https://github.com/)** - Used for version control and hosting the project repository, and was integrated with Monday.com for tracking commits and tasks.
