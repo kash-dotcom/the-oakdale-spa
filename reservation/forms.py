@@ -9,7 +9,7 @@ class GuestForm(forms.ModelForm):
         model = Guest
         fields = ['first_name',
                   'last_name', 'address', 'city',
-                  'postcode', 'email', 'phone_number',]
+                  'postcode', 'email', 'phone_number']
         widgets = {
             'first_name': forms.TextInput(attrs={'placeholder': 'First Name'}),
             'last_name': forms.TextInput(attrs={'placeholder': 'Last Name'}),
